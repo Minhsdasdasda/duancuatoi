@@ -260,7 +260,7 @@ public class SchoolApp {
             }
         }
     }
-
+--
     // ====== REPORT ======
     static void report(StudentManager sm, CourseManager cm, EnrollmentManager em, GradeManager gm){
         System.out.println("=== BAO CAO ===");
