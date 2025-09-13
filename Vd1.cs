@@ -2,20 +2,44 @@
 import java.util.*;
 
 // ====== ENTITY CLASSES ======
-class Student {
-    String id;
-    String name;
-    int age;
-    double gpa;
+public class Student {
+    private final String id;
+    private final String name;
+    private final int age;
+    private final double gpa;
 
-    Student(String id, String name, int age, double gpa) {
-        this.id = id; this.name = name; this.age = age; this.gpa = gpa;
+    public Student(String id, String name, int age, double gpa) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+        this.gpa = gpa;
     }
 
+    public String getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public double getGpa() {
+        return gpa;
+    }
+
+    @Override
     public String toString() {
-        return String.format("ID:%s | Name:%s | Age:%d | GPA:%.2f", id, name, age, gpa);
+        return String.format(
+            "ID: %s | Name: %s | Age: %d | GPA: %.2f",
+            id, name, age, gpa
+        );
     }
 }
+
 
 class Teacher {
     String id, name, major;
